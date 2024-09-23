@@ -1,0 +1,229 @@
+:root {
+    --color1: #ccc5b7;  /* Fondo secundario */
+    --color2: #f0ecec;  /* Fondo Principal */
+    --color3: #d19a4b;  /* Acento vibrante */
+    --color4: #4a3d2f;  /* Texto o elementos oscuros */
+    --color5: #355c7d;  /* Color de acento adicional */
+
+    --slide-transform: 0;
+    --transition: transform 1s;
+}
+
+
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Lora', serif; 
+    background: linear-gradient(120deg, var(--color1) 0%, var(--color2) 100%);
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer {
+    overflow-x: hidden; 
+}
+
+header.navbar.scrolled{
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+h2 {
+    text-align: center;
+    color: var(--color4); 
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.8; 
+    margin-bottom: 1.5rem; 
+}
+
+
+a {
+    color: var(--color5);   
+}
+
+a:hover {
+    text-decoration: none; 
+}
+
+.nav-link{
+    font-size: 20px;
+}
+
+.navbar-brand{
+    padding: 10px;
+}
+
+.card {
+    position: relative;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top{
+    height: 400px; 
+    width: 100%;   
+    object-fit: cover;
+}     
+
+.medidas-container {
+    position: absolute;
+    top: 10px; 
+    left: 0;
+    right: 0; 
+    display: flex;
+    justify-content: center; 
+    gap: 5px; 
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out; 
+    z-index: 1;
+}
+
+.medida {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 4px 8px;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover .medidas-container {
+    opacity: 1; 
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Estilo de la sección nosotros */
+#Nosotros {
+    background-color: var(--color1); 
+    padding: 3rem 0; 
+}
+
+#Nosotros h2 {
+    border-bottom: 3px solid var(--color3); 
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+
+/* Estilo de la sección contacto */
+
+#Contacto input:focus, #Contacto textarea:focus {
+    outline: none;
+    border-color: var(--color3);
+    box-shadow: 0 0 5px rgba(209, 154, 75, 0.5);
+}
+
+#formulario-producto {
+    display: none;
+}
+#Contacto {
+    padding: 3rem 0; 
+}
+
+#Contacto form {
+    background-color: white; 
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+}
+
+
+#Contacto label {
+    font-weight: 600;
+    color: var(--color4);
+}
+
+#Contacto input, #Contacto textarea {
+    width: 100%;
+    padding: 0.45rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--color1);
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize:none;
+}
+
+#Contacto button {
+    background: linear-gradient(45deg, var(--color3), var(--color5));
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.4s ease-in-out;
+}
+
+
+#Contacto button:hover {
+    background: linear-gradient(45deg, var(--color5), var(--color3));
+}
+
+
+.form-group small {
+	color: #e74c3c;
+	visibility: hidden;
+}
+
+.form-group.error small {
+	visibility: visible;
+}
+
+/* Estilos de información de contacto y redes sociales */
+#Contacto ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#Contacto ul li {
+    margin-bottom: 1rem;
+}
+
+#Contacto h4 {
+    margin-top: 2rem;
+    color: var(--color4);
+}
+
+#Contacto a {
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .card-img-top {
+        height: auto;
+    }
+
+    .slide-container {
+        max-width: 100%;
+    }
+
+    #Contacto {
+        padding: 2rem 1rem;
+    }
+}
