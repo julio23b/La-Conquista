@@ -7,13 +7,38 @@
 
     --slide-transform: 0;
     --transition: transform 1s;
-}
-
-
-html{
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
+
+.conquest-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, var(--color3), var(--color5)); 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.navbar {
+    background-color: transparent; 
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: #0080ff;
+}
+
+
+
+
 
 
 body {
@@ -25,10 +50,6 @@ body {
 
 header, main, footer {
     overflow-x: hidden; 
-}
-
-header.navbar.scrolled{
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
 }
 
 h2 {
@@ -61,8 +82,9 @@ a:hover {
 }
 
 .navbar-brand{
-    padding: 10px;
+    padding: 5px;
 }
+
 
 .card {
     position: relative;
@@ -226,4 +248,15 @@ img{
     #Contacto {
         padding: 2rem 1rem;
     }
+}
+
+/* Evitar copia y descarga de img */
+img {
+    pointer-events: none; 
+    -webkit-user-drag: none; 
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
 }
