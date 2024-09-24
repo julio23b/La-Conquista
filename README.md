@@ -27,8 +27,12 @@ Un formulario de contacto que permite a los usuarios enviar consultas o pedidos 
 ## Capturas de Pantalla
 
 ### Página de Inicio
-![Inicio](./assets/img/Alfombras/Nosotros/IMG-20240911-WA0031.jpg)width="300";
+![Inicio](<p align="center">
+  <img src="./assets/img/Alfombras/Nosotros/IMG-20240911-WA0031.jpg" width="300" />
+</p>)
 
 ### Productos
-![Productos](./assets/img/Alfombras/Semicircular/IMG-20240821-WA0008.webp)width="300";
+![Productos](<p align="center">
+  <img src="./assets/img/Alfombras/Semicircular/IMG-20240821-WA0008.webp" width="300" />
+</p>)
 
